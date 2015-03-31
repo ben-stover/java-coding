@@ -1,0 +1,35 @@
+[Note: Read this folder's README for a little background on this code.]
+
+Copyright (C) 2012 Ben Stover
+
+Design explanation:
+
+For my solution to the Mars Rovers problem I first created CRCs cards (Class - Responsibilities - Collaborations). This allowed me to quickly come up with the classes, their methods and decide which of these classes where needed to help each other complete their tasks for the possible types of objects that would be needed to solve the problem. Next I stubbed out each class/object and its methods which allowed me to work on (debug) seperate parts of the solution independant of each other.
+
+
+
+
+Assumptions:
+
+ - End user has an appropriate input file and knows how to enter its directory path/ file name into the command line from a shell command for their system.
+ - The rovers are hardware assets (not software simulated objects) that are communicated with through collaboration of software objects (handling a set of commands sequentially for all rovers assigned to a particular plateau) through a local hardware layer for programming simplicity.
+ - Future plateau coordinates could be more than a single digit wide.
+ - Some commands could be wrong, for example: movement commands might put a rover over the plateau's edge. This has been dealt with by catching the error and redirecting the rover in the opposite direction.
+
+
+
+
+Simplest way to safely run the solution without a precompiled file would be to:
+
+(1) Create a new console application solution from an IDE (I used the NetBeans IDE 7.0.1).
+	- Select File -> New Project...
+	- Choose Java Application from Projects listing (right side of dialogue screen)
+	- click the Next button
+	- Enter MarsRovers for the Project Name
+	- Then click the finish button
+
+(2) Next click the docked Projects/ solution browser and you will then see your newly created project
+
+(3) Now take the 3 downloaded .java files and save them to the "..\src\marsrovers\" directory
+
+(4) finally press F6 or click the big right facing green arrow to safely run the solution from inside your (NetBeans) IDE
